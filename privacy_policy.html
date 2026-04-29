@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | DriveSense PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            --accent-color: #00f2fe;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(0, 242, 254, 0.05), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(79, 172, 254, 0.05), transparent 25%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .gradient-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 400;
+            display: inline-block;
+            padding: 8px 18px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 45px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent-gradient);
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 35px;
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateX(4px);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--accent-gradient);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-color);
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        code {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--accent-color);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 28px;
+            font-size: 1.05rem;
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+            opacity: 0.8;
+        }
+
+        .highlight-box {
+            background: rgba(0, 242, 254, 0.05);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 20px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .content-card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            body {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Privacy Policy for <span class="gradient-text">DriveSense PRO</span></h1>
+            <div class="last-updated">Last Updated: April 2026</div>
+        </header>
+
+        <div class="content-card">
+            <p class="intro">DriveSense PRO ("the App") respects your privacy. This Privacy Policy explicitly outlines how we handle the data required for the App to function. The App is designed primarily for offline and local-device execution.</p>
+
+            <section>
+                <h2>1. Data Collection and Usage</h2>
+                <p>DriveSense PRO <strong>does not</strong> collect, transmit, upload, or sell your personal data to remote servers or third parties. All data processed by the App remains strictly on your local device.</p>
+            </section>
+
+            <section>
+                <h2>2. Location Permissions</h2>
+                <p>The App requires "Always On" background location permissions (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>) and operates a Foreground Location Service. This is strictly required for the core functionality of the App:</p>
+                <ul>
+                    <li>Calculating spatial proximity to local GPS Points of Interest (POIs).</li>
+                    <li>Modifying Radio Frequency detection parameters dynamically based on your current geographical speed.</li>
+                    <li>Locally dropping pins ("TETRA Circles") to your device's local memory (<code>SharedPreferences</code>).</li>
+                </ul>
+                <div class="highlight-box">
+                    <p><strong>At no point are your GPS coordinates or travel logs transmitted to us or any external analytics server.</strong> Your location tracking is entirely offline and ephemeral, unless manually saved to your device's local disk.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>3. USB Hardware Access</h2>
+                <p>The App requests USB Host access to interface directly with external hardware dongles (RTL-SDR / RTL2832U). The App only extracts radio frequency data necessary to generate alerts on your device display. No audio or frequency data is recorded or uploaded to the cloud.</p>
+            </section>
+
+            <section>
+                <h2>4. Third-Party Services</h2>
+                <p>The App processes mapping telemetry using OSMDroid (OpenStreetMap). OSMDroid may download map tiles directly from open-source mapping servers which may log standard web request information (such as IP addresses) strictly for the purpose of serving map tile images to your display.</p>
+            </section>
+
+            <section>
+                <h2>5. Contact Us</h2>
+                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact the developer. You can reach out to our support team at <a href="mailto:homeitlegal@gmail.com" style="color: var(--accent-color); text-decoration: none;">homeitlegal@gmail.com</a>.</p>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
